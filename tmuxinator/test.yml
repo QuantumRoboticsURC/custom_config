@@ -1,0 +1,10 @@
+# ~/.tmuxinator/test.yml
+
+name: test
+
+windows:
+        - WEB_INTERFACE:
+                root: ~/Web_Interface
+                panes:
+                        - roslaunch rosbridge_server rosbridge_websocket.launch
+                        - python3 application.py
